@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#11100d"><meta name="description" content="Khám phá ẩm thực, biển, thiên nhiên và trải nghiệm địa phương cùng Long Đạt Ma.">
+  <title>LONG ĐẠT MA — Experience Network</title>
+  <link rel="manifest" href="manifest.webmanifest"><link rel="icon" href="assets/icon.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#"><span class="brand-mark">龍</span><span>LONG ĐẠT MA<small>EXPERIENCE NETWORK</small></span></a>
+  <nav><a href="#experiences">Trải nghiệm</a><a href="#how">Cách đặt</a><a href="#host">Đối tác</a></nav>
+  <button class="lang" id="langBtn" aria-label="Switch language">VI / EN</button>
+</header>
+<main>
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">STAY IS THE CENTER · EXPERIENCE IS THE BUSINESS</p>
+      <h1>Ở lại lâu hơn.<br><em>Trải nghiệm nhiều hơn.</em></h1>
+      <p class="intro">Phòng nghỉ là điểm khởi đầu. Ẩm thực, biển, thiên nhiên và những cuộc vui địa phương đang chờ anh khám phá.</p>
+      <a class="gold-btn" href="#experiences">KHÁM PHÁ TRẢI NGHIỆM <span>↘</span></a>
+      <p class="micro">Dành cho khách Long Đạt Ma Homestay & du khách Hồ Tràm</p>
+    </div>
+    <div class="hero-art" aria-label="Long Đạt Ma emblem"><div class="sun"></div><div class="seal">龍<br><small>ĐẠT MA</small></div><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="hero-caption">SLEEP · EAT · PLAY · EXPLORE</div></div>
+  </section>
+  <section class="trust-strip"><span>01 / CHỌN TRẢI NGHIỆM</span><i></i><span>02 / GỬI YÊU CẦU</span><i></i><span>03 / ĐỐI TÁC XÁC NHẬN</span></section>
+  <section class="section" id="experiences">
+    <div class="section-head"><div><p class="eyebrow">THE OUTER RING</p><h2>Vòng tròn trải nghiệm</h2></div><p class="section-note">Một kỳ nghỉ — nhiều cách tận hưởng.</p></div>
+    <div class="toolbar"><div class="searchbox">⌕ <input id="search" placeholder="Tìm món ăn, thuê xe, camping..." aria-label="Tìm dịch vụ"></div><div class="filters" id="filters"></div></div>
+    <div class="service-grid" id="serviceGrid"></div>
+    <p class="empty hidden" id="empty">Chưa tìm thấy dịch vụ phù hợp. Anh thử từ khóa khác nhé.</p>
+  </section>
+  <section class="feature" id="how"><div class="feature-number">∞</div><div><p class="eyebrow">SIMPLE BY DESIGN</p><h2>Không cần cài app.<br><em>Mở link là khám phá.</em></h2><p>Chọn dịch vụ, gửi thời gian và số người. Long Đạt Ma sẽ kết nối anh với đơn vị cung cấp để xác nhận chi tiết.</p></div><div class="feature-steps"><div><b>01</b><span>Chọn dịch vụ phù hợp</span></div><div><b>02</b><span>Gửi thông tin yêu cầu</span></div><div><b>03</b><span>Nhận xác nhận từ chúng tôi</span></div></div></section>
+  <section class="partner" id="host"><p class="eyebrow">LOCAL PARTNERS WANTED</p><h2>Bạn có dịch vụ tốt tại Hồ Tràm?</h2><p>Cùng tham gia mạng lưới trải nghiệm Long Đạt Ma. Kết nối khách du lịch và phát triển doanh thu cùng nhau.</p><a class="outline-btn" href="mailto:hello@longdatma.com?subject=Long%20Dat%20Ma%20Partner">ĐĂNG KÝ LÀM ĐỐI TÁC ↗</a></section>
+</main>
+<footer><a class="brand" href="#"><span class="brand-mark">龍</span><span>LONG ĐẠT MA<small>EXPERIENCE NETWORK</small></span></a><span>HỒ TRÀM · VIỆT NAM</span><span>© 2026 LONG ĐẠT MA</span></footer>
+<div class="modal hidden" id="bookingModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+ <div class="modal-card"><button class="close" id="closeModal" aria-label="Đóng">×</button><p class="eyebrow">BOOK AN EXPERIENCE</p><h2 id="modalTitle">Đặt trải nghiệm</h2><p id="modalDesc" class="modal-desc"></p>
+ <form id="bookingForm"><input type="hidden" id="serviceId"><label>Họ tên<input id="guestName" required placeholder="Tên của anh/chị"></label><div class="two"><label>Ngày trải nghiệm<input id="date" type="date" required></label><label>Số người<input id="people" type="number" min="1" value="2" required></label></div><label>Giờ mong muốn<input id="time" type="time"></label><label>Ghi chú<textarea id="note" rows="3" placeholder="Ví dụ: cần 2 xe máy, giao tại homestay..."></textarea></label><button class="gold-btn submit" type="submit">GỬI YÊU CẦU ĐẶT DỊCH VỤ ↗</button><small class="fineprint">Yêu cầu chưa phải xác nhận đặt chỗ. Chúng tôi sẽ liên hệ để kiểm tra tình trạng và báo giá cuối cùng.</small></form>
+ </div>
+</div>
+<script src="config.js"></script><script src="app.js"></script>
+</body></html>
