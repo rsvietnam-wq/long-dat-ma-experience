@@ -1,16 +1,23 @@
+
 {
-  "name": "LONG ĐẠT MA Experience Network",
-  "short_name": "LDM Experience",
-  "start_url": ".",
+  "name": "LONG ĐẠT MA EXPERIENCE",
+  "short_name": "LONG ĐẠT MA",
+  "description": "THE OUTER RING - Vòng tròn trải nghiệm",
+  "start_url": "./",
+  "scope": "./",
   "display": "standalone",
-  "background_color": "#11100d",
-  "theme_color": "#11100d",
+  "background_color": "#080808",
+  "theme_color": "#080808",
   "icons": [
     {
-      "src": "assets/icon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
-      "purpose": "any maskable"
+      "src": "./assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
   ]
 }
